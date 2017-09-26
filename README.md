@@ -22,7 +22,7 @@ If you have encounter error of missing library package, please install before yo
 
 ## After the server is running ##
 
-### Down below are several curl command which can implement to create your user without using MySQL commands: ###
+### Down below are several curl commands which can implement to create your user without using MySQL commands: ###
 
 #### Create user(username="Teckwu3", password="teck123") ("POST"):
 curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123"}'
