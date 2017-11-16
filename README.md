@@ -2,11 +2,15 @@
 ## Before running the server ##
 a. Direct to your project directory in your terminal eg: cd /Users/zhouxuexuan/PycharmProjects/flasker_lab1(Project name)
 
+
 b. Please install python SQLAlCHEMY Invironment, if there is no such invironment then please use command line: 
+
 
 pip install SQLAlchemy
 
+
 c. Then enter python enironment by key "python" in terminal
+
 
 d. Create related database by python:
 
@@ -14,11 +18,14 @@ from flasker import db
 
 db.create_all()
 
+
 e. Under "Flasker" directory to setting.py
 
 Please implement your own database access info:
 
 eg:
+
+
 SQLALCHEMY_DATABASE_URI = "mysql://root:your_db_password@127.0.0.1:3306/Flasker_DB"
 
 "mysql://your server name:your password@your server ip:port number/DB name"
