@@ -1,15 +1,15 @@
 # Flasker Blog #
 ## Before running the server ##
-######a. Direct to your project directory in your terminal eg: cd /Users/zhouxuexuan/PycharmProjects/flasker_lab1(Project name)
+-a. Direct to your project directory in your terminal eg: cd /Users/zhouxuexuan/PycharmProjects/flasker_lab1(Project name)
 
 
-######b. Please install python SQLAlCHEMY Invironment, if there is no such invironment then please use command line: 
+-b. Please install python SQLAlCHEMY Invironment, if there is no such invironment then please use command line: 
 
 
 >**pip install SQLAlchemy**
 
 
-######c. Then enter python enironment by key "python" in terminal
+-c. Then enter python enironment by key "python" in terminal
 
 
 ######d. Create related database by python:
