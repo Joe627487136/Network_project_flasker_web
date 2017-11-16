@@ -20,6 +20,7 @@ Please implement your own database access info:
 
 eg:
 SQLALCHEMY_DATABASE_URI = "mysql://root:your_db_password@127.0.0.1:3306/Flasker_DB"
+
 "mysql://your server name:your password@your server ip:port number/DB name"
 
 
