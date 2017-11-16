@@ -10,6 +10,13 @@ from flasker import db
 
 db.create_all()
 
+d. Under "Flasker" directory to setting.py
+
+Please implement your own database access info:
+
+eg:
+SQLALCHEMY_DATABASE_URI = "mysql://root:somepassword@127.0.0.1:3306/Flasker_DB"
+
 
 
 
