@@ -1,4 +1,4 @@
-# 50.012 Lab1 #
+# Flasker Blog #
 ## Before running the server ##
 a. Direct to your project directory in your terminal eg: cd /Users/zhouxuexuan/PycharmProjects/flasker_lab1
 
