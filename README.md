@@ -87,7 +87,9 @@ If you have encounter error of missing library package, please install before yo
 ## How to run the server?
 
 ### Introduce to system structure ###
-![Alt text](https://github.com/Joe627487136/Network_project_flasker_web/blob/master/Setup_Screenshot/Flasker_Struct.png?raw=true "Title")
+<p align="center">
+<img src="https://github.com/Joe627487136/Network_project_flasker_web/blob/master/Setup_Screenshot/Flasker_Struct.png" width="480" align="center">
+</p>
 
 User can only access server 1 and server 1 will respond to db to achieve the basic blog function query (eg: blog posts)
 User login will generate post request to server 1 and after server 1 receive the post request it will generate its own post request to query the account server which can access and check the sensitive user info data in db.
