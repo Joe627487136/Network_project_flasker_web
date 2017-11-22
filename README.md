@@ -86,7 +86,7 @@ If you have encounter error of missing library package, please install before yo
 ## How to run the server?
 
 ### Introduce to system structure ###
-
+![Alt text](https://github.com/Joe627487136/Network_project_flasker_web/blob/master/Setup_Screenshot/Flasker_Struct.png?raw=true "Title")
 
 
 ## After the server is running ##
