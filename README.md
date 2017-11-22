@@ -5,28 +5,28 @@
 
 - b. Please install python SQLAlCHEMY environment, if there is no such environment then please install by command line: 
 
-
-    >**pip install SQLAlchemy**
-
+```
+    pip install SQLAlchemy
+```
 
 - c. Then enter python enironment by key "python" in terminal
 
 
 - d. Create related database by python:
+```
+    from flasker import db
 
-    >from flasker import db
-
-    >db.create_all()
-
+    db.create_all()
+```
 
 - e. Under "Flasker1" directory to setting.py, Please implement your own database access info:
+```
+    eg:
 
-    >eg:
+    SQLALCHEMY_DATABASE_URI = "mysql://root:your_db_password@127.0.0.1:3306/Flasker_DB"**
 
-    >**SQLALCHEMY_DATABASE_URI = "mysql://root:your_db_password@127.0.0.1:3306/Flasker_DB"**
-
-    >**"mysql://your server name:your password@your server ip:port number/DB name"**
-
+    "mysql://your server name:your password@your server ip:port number/DB name"**
+```
 
 Then you can also refer to below screenshot if you have any problems during setup.
 If you have encounter error of missing library package, please install before you create the database.
@@ -35,56 +35,61 @@ If you have encounter error of missing library package, please install before yo
 </p>
 
 - f. Code structure:
+```
+.../Flasker_Blog
+├── flasker1
+│   ├── flasker
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-36.pyc
+│   │   │   └── setting.cpython-36.pyc
+│   │   ├── controller
+│   │   │   ├── __pycache__
+│   │   │   │   └── blog_message.cpython-36.pyc
+│   │   │   └── blog_message.py
+│   │   ├── model
+│   │   │   ├── Category.py
+│   │   │   ├── User.py
+│   │   │   └── __pycache__
+│   │   │       ├── Category.cpython-36.pyc
+│   │   │       └── User.cpython-36.pyc
+│   │   ├── setting.py
+│   │   ├── static
+│   │   │   └── style.css
+│   │   └── templates
+│   │       ├── layout.html
+│   │       ├── login.html
+│   │       └── show_entries.html
+│   └── runserver.py
+└── flasker2
+    ├── flasker
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   │   ├── __init__.cpython-36.pyc
+    │   │   └── setting.cpython-36.pyc
+    │   ├── controller
+    │   │   ├── Account_ctrl.py
+    │   │   └── __pycache__
+    │   │       └── Account_ctrl.cpython-36.pyc
+    │   ├── model
+    │   │   ├── Category.py
+    │   │   ├── User.py
+    │   │   └── __pycache__
+    │   │       ├── Category.cpython-36.pyc
+    │   │       └── User.cpython-36.pyc
+    │   ├── setting.py
+    │   ├── static
+    │   └── templates
+    └── runserver.py
 
-  Flasker_Blog <br />
-  ├── flasker1 [(Blog Server)](https://github.com/Joe627487136/Network_project_flasker_web/tree/master/Flask_Blog/flasker1) <br />
-  │   ├── flasker <br />
-  │   │   ├── __init__.py <br />
-  │   │   ├── __pycache__ <br />
-  │   │   │   ├── __init__.cpython-36.pyc <br />
-  │   │   │   └── setting.cpython-36.pyc <br />
-  │   │   ├── controller <br />
-  │   │   │   ├── __pycache__ <br />
-  │   │   │   │   └── blog_message.cpython-36.pyc <br />
-  │   │   │   └── blog_message.py <br />
-  │   │   ├── model <br />
-  │   │   │   ├── Category.py <br />
-  │   │   │   ├── User.py <br />
-  │   │   │   └── __pycache__ <br />
-  │   │   │       ├── Category.cpython-36.pyc <br />
-  │   │   │       └── User.cpython-36.pyc <br />
-  │   │   ├── setting.py <br />
-  │   │   ├── static <br />
-  │   │   │   └── style.css <br />
-  │   │   └── templates <br />
-  │   │       ├── layout.html <br />
-  │   │       ├── login.html <br />
-  │   │       └── show_entries.html <br />
-  │   └── runserver.py <br />
-  └── flasker2 [(Admin Server)](https://github.com/Joe627487136/Network_project_flasker_web/tree/master/Flask_Blog/flasker2) <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── flasker <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   ├── __init__.py <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   ├── __pycache__ <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── __init__.cpython-36.pyc <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   └── setting.cpython-36.pyc <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── controller <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── Account_ctrl.py <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   └── __pycache__ <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │       └── Account_ctrl.cpython-36.pyc <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── model <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── Category.py <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── User.py <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   └── __pycache__ <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │       ├── Category.cpython-36.pyc <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │       └── User.cpython-36.pyc <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── setting.py <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── static <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   └── templates <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    └── runserver.py <br />
 
-- g. Create your own admin account on Server 2: <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Direct to /Users/blablabla/PycharmProjects/Flasker_Blog(Project name)/flakser2(Firser Server)/flask/controller/Account_ctrl.py<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then in check_auth func you can modify your admin account and password, default:(admin,secret)
+```
+
+- g. Create your own admin account on Server 2:
+```
+Direct to .../Flasker_Blog(Project name)/flakser2(Firser Server)/flask/controller/Account_ctrl.py
+Then in check_auth func you can modify your admin account and password, default:(admin,secret)
+```
 ## How to run the server?
 
 ### Introduce to system structure ###
@@ -101,10 +106,10 @@ User login will generate post request to server 1 and after server 1 receive the
 ### Down below are several curl commands which can implement to create your user without using MySQL commands: ###
 
 #### Create user(username="Teckwu3", password="teck123") ("POST"):
-curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123"}' -u "admin_acc:pwd"
+curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123"}' -u "admin:secret"
 
 #### Update user with new password (username="Teckwu3", old password="teck123", new password="teck") ("PUT"):
-curl -H "Content-type: application/json" \ -X PUT http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123", "newpassword";"teck"}' -u "admin_acc:pwd"
+curl -H "Content-type: application/json" \ -X PUT http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123", "newpassword";"teck"}' -u "admin:secret"
 
 #### Delete user(username="Teckwu3", password="teck") ("DELETE"):
-curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck"}' -u "admin_acc:pwd"
+curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck"}' -u -u "admin:secret"
