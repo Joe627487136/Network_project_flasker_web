@@ -30,8 +30,7 @@
 
 Then you can also refer to below screenshot if you have any problems during setup.
 If you have encounter error of missing library package, please install before you create the database.
-
-![Alt text](https://github.com/Joe627487136/flasker_lab1/blob/master/Setup_Screenshot/Screenshot%202017-09-26%2015.10.17.png?raw=true "Title")
+<img src="https://github.com/Joe627487136/flasker_lab1/blob/master/Setup_Screenshot/Screenshot%202017-09-26%2015.10.17.png" width="480">
 
 - f. Code structure:
 
