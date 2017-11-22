@@ -1,6 +1,6 @@
 # Flasker Blog #
 ## Before running the server ##
-- a. Direct to your project directory in your terminal eg: cd /Users/zhouxuexuan/PycharmProjects/flasker_lab1(Project name)
+- a. Direct to your project directory in your terminal eg: cd /Users/zhouxuexuan/PycharmProjects/Flasker_Blog(Project name)/flakser1(Firser Server)
 
 
 - b. Please install python SQLAlCHEMY environment, if there is no such environment then please install by command line: 
@@ -19,7 +19,7 @@
     >db.create_all()
 
 
-- e. Under "Flasker" directory to setting.py, Please implement your own database access info:
+- e. Under "Flasker1" directory to setting.py, Please implement your own database access info:
 
     >eg:
 
@@ -28,10 +28,28 @@
     >**"mysql://your server name:your password@your server ip:port number/DB name"**
 
 
-You can also refer to below screenshot if you have any problems during setup.
+Then you can also refer to below screenshot if you have any problems during setup.
 If you have encounter error of missing library package, please install before you create the database.
 
 ![Alt text](https://github.com/Joe627487136/flasker_lab1/blob/master/Setup_Screenshot/Screenshot%202017-09-26%2015.10.17.png?raw=true "Title")
+
+- f. Code structure:
+    >Flasker_Blog
+     >-flasker1
+      >-_init_.py
+      >-...
+      >-templates
+      >-runserver.py
+     >-flasker2
+      >-_init_.py
+      >-...
+      >-templates
+      >-runserver.py
+    
+    
+## How to run the server?##
+
+### Introduce to system structure ###
 
 
 
