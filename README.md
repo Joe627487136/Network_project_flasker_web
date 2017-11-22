@@ -112,4 +112,4 @@ curl -H "Content-type: application/json" -X POST http://127.0.0.1:5001/User -d '
 curl -H "Content-type: application/json" -X PUT http://127.0.0.1:5001/User -d '{"username":"Teck1234", "password":"Teck1234", "newpassword":"teck"}' -u "admin:secret"
 
 #### Delete user(username="Teckwu3", password="teck") ("DELETE"):
-curl -H "Content-type: application/json" -X POST http://127.0.0.1:5001/User -d '{"username":"Teck1234", "password":"teck"}' -u "admin:secret"
+curl -H "Content-type: application/json" -X DELETE http://127.0.0.1:5001/User -d '{"username":"Teck1234", "password":"teck"}' -u "admin:secret"
