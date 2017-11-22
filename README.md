@@ -34,20 +34,56 @@ If you have encounter error of missing library package, please install before yo
 ![Alt text](https://github.com/Joe627487136/flasker_lab1/blob/master/Setup_Screenshot/Screenshot%202017-09-26%2015.10.17.png?raw=true "Title")
 
 - f. Code structure:
-    >Flasker_Blog
-     >-flasker1
-      >-_init_.py
-      >-...
-      >-templates
-      >-runserver.py
-     >-flasker2
-      >-_init_.py
-      >-...
-      >-templates
-      >-runserver.py
+
+  Flasker_Blog <br />
+  ├── flasker1 [(Blog Server)](https://github.com/Joe627487136/Network_project_flasker_web/tree/master/Flask_Blog/flasker1) <br />
+  │   ├── flasker <br />
+  │   │   ├── __init__.py <br />
+  │   │   ├── __pycache__ <br />
+  │   │   │   ├── __init__.cpython-36.pyc <br />
+  │   │   │   └── setting.cpython-36.pyc <br />
+  │   │   ├── controller <br />
+  │   │   │   ├── __pycache__ <br />
+  │   │   │   │   └── blog_message.cpython-36.pyc <br />
+  │   │   │   └── blog_message.py <br />
+  │   │   ├── model <br />
+  │   │   │   ├── Category.py <br />
+  │   │   │   ├── User.py <br />
+  │   │   │   └── __pycache__ <br />
+  │   │   │       ├── Category.cpython-36.pyc <br />
+  │   │   │       └── User.cpython-36.pyc <br />
+  │   │   ├── setting.py <br />
+  │   │   ├── static <br />
+  │   │   │   └── style.css <br />
+  │   │   └── templates <br />
+  │   │       ├── layout.html <br />
+  │   │       ├── login.html <br />
+  │   │       └── show_entries.html <br />
+  │   └── runserver.py <br />
+  └── flasker2 [(Admin Server)](https://github.com/Joe627487136/Network_project_flasker_web/tree/master/Flask_Blog/flasker2) <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── flasker <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   ├── __init__.py <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   ├── __pycache__ <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── __init__.cpython-36.pyc <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   └── setting.cpython-36.pyc <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── controller <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── Account_ctrl.py <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   └── __pycache__ <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │       └── Account_ctrl.cpython-36.pyc <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── model <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── Category.py <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   ├── User.py <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │   └── __pycache__ <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │       ├── Category.cpython-36.pyc <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   │       └── User.cpython-36.pyc <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── setting.py <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   ├── static <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   └── templates <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    └── runserver.py <br />
+
     
     
-## How to run the server?##
+## How to run the server?
 
 ### Introduce to system structure ###
 
