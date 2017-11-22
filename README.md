@@ -82,7 +82,8 @@ If you have encounter error of missing library package, please install before yo
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   └── templates <br />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    └── runserver.py <br />
 
-    
+- g. Create your own admin account on Server 2: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from flasker import db
     
 ## How to run the server?
 
@@ -100,10 +101,10 @@ User login will generate post request to server 1 and after server 1 receive the
 ### Down below are several curl commands which can implement to create your user without using MySQL commands: ###
 
 #### Create user(username="Teckwu3", password="teck123") ("POST"):
-curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123"}'
+curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123"}' -u "admin_acc:pwd"
 
 #### Update user with new password (username="Teckwu3", old password="teck123", new password="teck") ("PUT"):
-curl -H "Content-type: application/json" \ -X PUT http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123", "newpassword";"teck"}'
+curl -H "Content-type: application/json" \ -X PUT http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck123", "newpassword";"teck"}' -u "admin_acc:pwd"
 
 #### Delete user(username="Teckwu3", password="teck") ("DELETE"):
-curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck"}'
+curl -H "Content-type: application/json" \ -X POST http://127.0.0.1:5000/User -d '{"username":"Teckwu3", "password":"teck"}' -u "admin_acc:pwd"
