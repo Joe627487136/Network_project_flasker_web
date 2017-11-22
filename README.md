@@ -1,6 +1,6 @@
 # Flasker Blog #
 ## Before running the server ##
-- a. Direct to your project directory in your terminal eg: cd /Users/zhouxuexuan/PycharmProjects/Flasker_Blog(Project name)/flakser1(Firser Server)
+- a. Direct to your project directory in your terminal eg: cd /Users/blablabla/PycharmProjects/Flasker_Blog(Project name)/flakser1(Firser Server)
 
 
 - b. Please install python SQLAlCHEMY environment, if there is no such environment then please install by command line: 
@@ -82,9 +82,9 @@ If you have encounter error of missing library package, please install before yo
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    │   └── templates <br />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    └── runserver.py <br />
 
-- g. Create your own admin account on Server 2: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from flasker import db
-    
+- g. Create your own admin account on Server 2: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Direct to /Users/blablabla/PycharmProjects/Flasker_Blog(Project name)/flakser2(Firser Server)/flask/controller/Account_ctrl.py<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then in check_auth func you can modify your admin account and password, default:(admin,secret)
 ## How to run the server?
 
 ### Introduce to system structure ###
