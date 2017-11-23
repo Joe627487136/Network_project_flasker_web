@@ -113,3 +113,7 @@ curl -H "Content-type: application/json" -X PUT http://127.0.0.1:5001/User -d '{
 
 #### Delete user(username="Teckwu3", password="teck") ("DELETE"):
 curl -H "Content-type: application/json" -X DELETE http://127.0.0.1:5001/User -d '{"username":"Teck1234", "password":"teck"}' -u "admin:secret"
+
+#### Use Curl to verify dual server communication over login action:
+curl -X POST http://127.0.0.1:5000/login -F "username=your_username" -F "password=your_password"
+
